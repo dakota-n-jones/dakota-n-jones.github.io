@@ -1,0 +1,90 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #41a587;
+}
+
+body {
+    margin-top: 80px;
+}
+
+.mainContent {
+    margin: 150px 100px;
+}
+
+h1 {
+    color: #fe6e58;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.flexBoxColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexBoxRow {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    background-color: #254441;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    height: 75px;
+    width: 100vw;
+    box-shadow: 0px 2px 4px #000000;
+}
+
+.navTitle {
+    padding: 0 20px;
+    color: aliceblue;
+    margin: auto 10px;
+    font-size: 30px;
+    text-shadow: none;
+}
+
+nav > ul {
+    margin: auto 20px auto auto;
+    align-content: space-between;
+    list-style: none;
+}
+
+nav > ul > li > a {
+    background-color: #ff6f59;
+    text-decoration: none;
+    color: #852d27;
+    padding: 10px 40px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+nav > ul > li > a:link {
+    background-color: #ff6f59;
+    color: #852d27;
+    text-decoration: none;
+}
+
+nav > ul > li > a:visited {
+    background-color: #ff6f59;
+    color: #852d27;
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+    background-color: #ffd7d1;
+    color: #ff6f59;
+    text-decoration: none;
+}
+
+nav > ul > li > a:active {
+    background-color: aliceblue;
+    color: #852d27;
+    text-decoration: none;
+}
