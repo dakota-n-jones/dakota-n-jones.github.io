@@ -3,14 +3,21 @@
     src: url("content/fonts/Arcane.otf");
 }
 
+@font-face {
+    font-family: 'Acme';
+    src: url("content/fonts/Acme-Regular.ttf");
+}
+
 :root {
     --main-color: #161616;
     --dark-main-color: #070707;
+    --main-color-2: #6b3e54;
     --accent-color: #f4a9a9;
     --dark-accent-color: #72401d;
     --light-accent-color: #ffeeeb;
     --bold-text-color: #eea444;
     --bold-text-color-light: #f1d3aa;
+    --backround-block-color: #e6e6e6;
 }
 
 html, body {
@@ -19,7 +26,8 @@ html, body {
 }
 
 html {
-    background-color: var(--main-color);
+    background-image: linear-gradient(var(--main-color-2), var(--main-color));
+    height: 100vh;
 }
 
 body {
@@ -28,19 +36,26 @@ body {
 
 .mainContent {
     margin: 150px 100px;
+    text-align: center;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Arcane';
-}
-
-h2, h3, h4 {
-    color: var(--bold-text-color-light);
+.bodyContent {
+    background-color: var(--backround-block-color);
+    border-radius: 25px;
+    margin: 15px;
+    height: 200px;
+    padding: 25px;
 }
 
 h1 {
-    text-shadow: 1px 1px 1px #000000;
+    font-family: 'Arcane';
     color: var(--bold-text-color);
+    text-shadow: 1px 1px 1px #000000;
+}
+
+h2, h3, h4 {
+    color: var(--dark-accent-color);
+    font-family: 'Acme';
 }
 
 .flexBoxColumn {
