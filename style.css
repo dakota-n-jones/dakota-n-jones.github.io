@@ -1,10 +1,22 @@
+@font-face {
+    font-family: 'Arcane';
+    src: url("content/fonts/Arcane.otf");
+}
+
+:root {
+    --main-color: #41a587;
+    --dark-main-color: #254441;
+    --accent-color: #fe6e58;
+    --dark-accent-color: #852d27;
+}
+
 html, body {
     margin: 0;
     padding: 0;
 }
 
 html {
-    background-color: #41a587;
+    background-color: var(--main-color);
 }
 
 body {
@@ -15,8 +27,12 @@ body {
     margin: 150px 100px;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Arcane';
+}
+
 h1 {
-    color: #fe6e58;
+    color: var(--accent-color);
     text-shadow: 1px 1px 1px #000000;
 }
 
@@ -31,7 +47,7 @@ h1 {
 }
 
 nav {
-    background-color: #254441;
+    background-color: var(--dark-main-color);
     position: fixed;
     top: 0;
     margin: 0;
@@ -56,9 +72,9 @@ nav > ul {
 }
 
 nav > ul > li > a {
-    background-color: #ff6f59;
+    background-color: var(--accent-color);
     text-decoration: none;
-    color: #852d27;
+    color: var(--dark-accent-color);
     padding: 10px 40px;
     margin: 10px;
     border-radius: 20px;
