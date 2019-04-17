@@ -4,10 +4,13 @@
 }
 
 :root {
-    --main-color: #41a587;
-    --dark-main-color: #254441;
-    --accent-color: #fe6e58;
-    --dark-accent-color: #852d27;
+    --main-color: #161616;
+    --dark-main-color: #070707;
+    --accent-color: #f4a9a9;
+    --dark-accent-color: #72401d;
+    --light-accent-color: #ffeeeb;
+    --bold-text-color: #eea444;
+    --bold-text-color-light: #f1d3aa;
 }
 
 html, body {
@@ -31,9 +34,13 @@ h1, h2, h3, h4 {
     font-family: 'Arcane';
 }
 
+h2, h3, h4 {
+    color: var(--bold-text-color-light);
+}
+
 h1 {
-    color: var(--accent-color);
     text-shadow: 1px 1px 1px #000000;
+    color: var(--bold-text-color);
 }
 
 .flexBoxColumn {
@@ -59,10 +66,20 @@ nav {
 
 .navTitle {
     padding: 0 20px;
-    color: aliceblue;
     margin: auto 10px;
+}
+
+.navTitle h1 {
     font-size: 30px;
     text-shadow: none;
+    color: aliceblue;
+}
+
+.navTitle img {
+    max-height: 60px;
+    min-height: 60px;
+    width: auto;
+    margin: auto 10px;
 }
 
 nav > ul {
@@ -73,6 +90,7 @@ nav > ul {
 
 nav > ul > li > a {
     background-color: var(--accent-color);
+    font-family: 'Arcane';
     text-decoration: none;
     color: var(--dark-accent-color);
     padding: 10px 40px;
@@ -82,25 +100,25 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:link {
-    background-color: #ff6f59;
-    color: #852d27;
+    background-color: var(--accent-color);
+    color: var(--dark-accent-color);
     text-decoration: none;
 }
 
 nav > ul > li > a:visited {
-    background-color: #ff6f59;
-    color: #852d27;
+    background-color: var(--accent-color);
+    color: var(--dark-accent-color);
     text-decoration: none;
 }
 
 nav > ul > li > a:hover {
-    background-color: #ffd7d1;
-    color: #ff6f59;
+    background-color: var(--light-accent-color);
+    color: var(--accent-color);
     text-decoration: none;
 }
 
 nav > ul > li > a:active {
     background-color: aliceblue;
-    color: #852d27;
+    color: var(--dark-accent-color);
     text-decoration: none;
 }
