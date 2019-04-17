@@ -28,6 +28,7 @@ html, body {
 html {
     background-image: linear-gradient(var(--main-color-2), var(--main-color));
     height: 100vh;
+    overflow: hidden;
 }
 
 body {
@@ -42,9 +43,9 @@ body {
 .bodyContent {
     background-color: var(--backround-block-color);
     border-radius: 25px;
-    margin: 15px;
-    height: 200px;
+    height: 60vh;
     padding: 25px;
+    margin: 15px;
 }
 
 h1 {
