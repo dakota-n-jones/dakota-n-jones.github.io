@@ -38,6 +38,9 @@ body {
 .mainContent {
     margin: 150px 100px;
     text-align: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .bodyContent {
@@ -46,6 +49,9 @@ body {
     height: 60vh;
     padding: 25px;
     margin: 15px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
 }
 
 h1 {
@@ -148,4 +154,20 @@ nav > ul > li > a:active {
     background-color: aliceblue;
     color: var(--dark-accent-color);
     text-decoration: none;
+}
+
+.bodyContent > img {
+    border-radius: 20px;
+}
+
+.paragraphText {
+    width: 30vw;
+    min-width: 350px;
+    margin: 10px 20px;
+}
+
+.aboutContent {
+    width: 55vw;
+    margin-left: auto;
+    margin-right: auto;
 }
