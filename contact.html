@@ -37,8 +37,37 @@
             <h1>How can you reach me?</h1>
             <img src="content/images/pinkmoon.png">
         </div>
-        <div class="bodyContent">
-            <h3>This is contact info.</h3>
+        <div class="bodyContent flexBoxRow contactContent">
+            <div class="contactItems flexBoxColumn">
+                <div class="flexBoxRow contactInfo">
+                    <img class="contactLogo" src="content/images/email-logo.png">
+                    <h3>dakotajones.red@gmail.com</h3>
+                </div>
+                <div class="flexBoxRow contactInfo">
+                    <img class="contactLogo" src="content/images/phone-logo.png">
+                    <h3>661-662-4591</h3>
+                </div>
+                <div class="flexBoxRow contactInfo">
+                    <img class="contactLogo" src="content/images/linkedin-logo.png">
+                    <a href="https://www.linkedin.com/in/dakota-n-jones/"><h3>https://www.linkedin.com/in/dakota-n-jones/</h3></a>
+                </div>
+                <div class="flexBoxRow contactInfo">
+                    <img class="contactLogo" src="content/images/pdf-logo.png">
+                    <a href="Dakota Jones Resume.pdf" download="Dakota Jones Resume"><h3>Resume</h3></a>
+                </div>
+            </div>
+            <div class="emailForm flexBoxColumn">
+                <h3>Send me an email!</h3>
+                <form class="flexBoxColumn" action="https://formspree.io/dakotajones.red@gmail.com" method="POST">
+                    <h3>Name</h3>
+                    <input type="text" name="name">
+                    <h3>Email</h3>
+                    <input type="text" name="email">
+                    <h3>Message</h3>
+                    <textarea name="message"></textarea>
+                    <button class="submitButton" type="submit">Send</button>
+                </form>
+            </div>
         </div>
     </div>
 </body>

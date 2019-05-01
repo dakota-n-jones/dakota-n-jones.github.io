@@ -52,6 +52,7 @@ body {
     align-content: center;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 h1 {
@@ -170,4 +171,85 @@ nav > ul > li > a:active {
     width: 55vw;
     margin-left: auto;
     margin-right: auto;
+}
+
+.aboutContent > img {
+    height: 400px;
+    width: auto;
+}
+
+.contactLogo {
+    height: 50px;
+    width: auto;
+    margin: 5px 10px;
+}
+
+.contactInfo {
+    margin: 10px;
+}
+
+.submitButton {
+    background-color: var(--accent-color);
+    color: var(--dark-accent-color);
+    font-family: 'Arcane';
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    width: 150px;
+}
+
+.emailForm {
+    width: 30vw;
+}
+
+.emailForm > form {
+    align-items: center;
+}
+
+.emailForm > h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.emailForm > form > h3 {
+    font-size: 20px;
+}
+
+.emailForm > form > input[type=text] {
+    font-size: 18px;
+    font-family: 'Acme';
+    color: var(--dark-accent-color);
+    width: 400px;
+}
+
+.emailForm > form > textarea {
+    font-size: 18px;
+    font-family: 'Acme';
+    color: var(--dark-accent-color);
+    width: 400px;
+    height: 175px;
+}
+
+.contactContent {
+    width: 55vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.homeContent {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.socialMediaLink {
+    height: 75px;
+    width: auto;
+    margin: 20px;
+}
+
+.indexTitle {
+    margin-top: 300px;
 }
