@@ -25,6 +25,10 @@ html, body {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 html {
     background-image: linear-gradient(var(--main-color-2), var(--main-color));
     height: 100vh;
